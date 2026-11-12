@@ -1,0 +1,13 @@
+{
+  "name": "sumiro",
+  "private": true,
+  "type": "module",
+  "description": "Sumiro — an ink-painting walk, with other wanderers on the road.",
+  "scripts": {
+    "start": "node server/server.mjs",
+    "dev": "node server/server.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

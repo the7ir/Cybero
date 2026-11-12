@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Shell(cd bundle && grep -o \"name:[`\\\"][A-Za-z0-9_ ]*[`\\\"]\" player-CL4Mkkpm.js | head -40; echo \"---PLAYER HEAD---\"; head -c 3000 player-CL4Mkkpm.js)",
+      "Shell(cd:*)",
+      "Shell(cd bundle && grep -o \"code===`[A-Za-z0-9]*`\" index-VEMJneSs.js game-DnUBhPIZ.js hud-C3jOV9kg.js | sort -u | head -40; echo \"=== KEY MAP ===\"; python3 - <<'EOF' s=open('index-VEMJneSs.js').read() i=s.find('KeyW') print(s[max(0,i-800):i+800] if i>0 else 'no KeyW') EOF)"
+    ],
+    "deny": [],
+    "defaultMode": "default"
+  }
+}
